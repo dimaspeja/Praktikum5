@@ -1,4 +1,5 @@
-#🟦 1. Dictionary untuk menyimpan data mahasiswa
+# 1. Dictionary untuk menyimpan data mahasiswa
+
 data = {}
 
 
@@ -16,7 +17,8 @@ data = {
    ...
 }
 
-#🟦 2. Fungsi menghitung nilai akhir
+# 2. Fungsi menghitung nilai akhir
+
 def hitung_akhir(tugas, uts, uas):
     return (tugas * 0.30) + (uts * 0.35) + (uas * 0.35)
 
@@ -29,13 +31,14 @@ UTS = 35%
 
 UAS = 35%
 
-#🟦 3. Perulangan utama program
+# 3. Perulangan utama program
+
 while True:
 
 
 Program berjalan terus sampai pengguna memilih menu Keluar (K/k).
 
-#🟦 4. Menu pilihan
+# 4. Menu pilihan
 
 Program menampilkan menu:
 
@@ -49,7 +52,8 @@ menu = input("Pilih menu : ").lower()
 
 .lower() digunakan agar input huruf besar/kecil tetap diterima.
 
-#🟦 5. Menu L — Lihat Data
+# 5. Menu L — Lihat Data
+
 if menu == "l":
 
 
@@ -83,7 +87,8 @@ print(f"| {no:^2d} | {nim:^12s} | {item['nama']:^12s} | "
       f"{item['tugas']:^5d} | {item['uts']:^4d} | {item['uas']:^4d} | "
       f"{item['akhir']:^7.2f} |")
 
-#🟦 6. Menu T — Tambah Data
+# 6. Menu T — Tambah Data
+
 elif menu == "t":
 
 
@@ -114,7 +119,8 @@ data[nim] = {
     "akhir": akhir
 }
 
-#🟦 7. Menu U — Ubah Data
+# 7. Menu U — Ubah Data
+
 elif menu == "u":
 
 
@@ -129,7 +135,8 @@ Jika tidak ditemukan → muncul pesan:
 
 print("Data dengan NIM tersebut tidak ditemukan.")
 
-#🟦 8. Menu H — Hapus Data
+# 8. Menu H — Hapus Data
+
 elif menu == "h":
 
 
@@ -140,7 +147,8 @@ del data[nim]
 
 Jika tidak ada → tampilkan pesan data tidak ditemukan.
 
-#🟦 9. Menu C — Cari Data
+# 9. Menu C — Cari Data
+
 elif menu == "c":
 
 
@@ -158,7 +166,8 @@ Nilai akhir
 
 Jika tidak → tampilkan "Data tidak ditemukan."
 
-#🟦 10. Menu K — Keluar Program
+# 10. Menu K — Keluar Program
+
 elif menu == "k":
     print("Program selesai.")
     break
@@ -166,6 +175,6 @@ elif menu == "k":
 
 break menghentikan loop while True.
 
-🟦 11. Jika input menu tidak valid
+Jika input menu tidak valid
 else:
     print("Menu tidak tersedia!")
